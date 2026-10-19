@@ -12,8 +12,8 @@
   
   set.seed(1234)
   
-  source("/Users/ana207/Desktop/R_Projects/catlas_enrichment/Function_Pairwise_fishers.R")
-
+  source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/pairwise_fishers.R")
+  
 
 ## Arguments:
 
