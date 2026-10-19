@@ -13,10 +13,11 @@
   
   set.seed(1234)
   
-  source("../../Analysis/smg_functions/Function_Overlaps_Output_Bed.R")
-  source("../catlas_enrichment/Function_Pairwise_fishers.R")
-  source("../catlas_enrichment/Function_enrichment_wide_df.R")
-  source("../catlas_enrichment/Function_enrichment_fishers.R")
+  source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/bed_overlaps.R")
+  source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/pairwise_fishers.R")
+  source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/marker_peak_enrich_wide_df.R")
+  source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/marker_peak_enrich_fishers.R")
+  
   
 ##-------------------------------------------------------------------------------------------------
 ## SC stage:
