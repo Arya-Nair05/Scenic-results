@@ -23,7 +23,7 @@
 ## SC stage:
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  sc_reg <- read.table("D0_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  sc_reg <- read.table("data/D0_eRegulon_direct.tsv", sep = "\t", header = TRUE)
   
 ## selcting the top 20k regulon triplets and cleaning the df
   reg_num <- 20000
@@ -37,7 +37,7 @@
            end= as.numeric(end))
   
 ## loading the markers:
-  sc_markers <- read.csv("../catlas_enrichment/SC_KO_vs_WT_markers.csv", header = TRUE)
+  sc_markers <- read.csv("data/SC_KO_vs_WT_markers.csv", header = TRUE)
   
 ## Fishers:
   # making a wide format df:
@@ -70,7 +70,7 @@
 ## DE stage
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  de_reg <- read.table("DE_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  de_reg <- read.table("data/DE_eRegulon_direct.tsv", sep = "\t", header = TRUE)
   
 ## selcting the top 20k regulon triplets and removing regulons with negative TF-GENE rho value
   reg_num <- 20000
@@ -84,7 +84,7 @@
            end= as.numeric(end)) 
   
   ## loading the markers:
-  de_markers <- read.csv("../catlas_enrichment/DE_KO_vs_WT_markers.csv", header = TRUE)
+  de_markers <- read.csv("data/DE_KO_vs_WT_markers.csv", header = TRUE)
   
   ## Fishers:
   # making a wide format df:
@@ -115,7 +115,7 @@
 ## S2 stage
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  s2_reg <- read.table("S2_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  s2_reg <- read.table("data/S2_eRegulon_direct.tsv", sep = "\t", header = TRUE)
   
   ## selcting the top 20k regulon triplets and cleaning the df
   reg_num <- 20000
@@ -129,7 +129,7 @@
            end= as.numeric(end)) 
   
   ## loading the markers:
-  s2_markers <- read.csv("../catlas_enrichment/S2_KO_vs_WT_markers.csv", header = TRUE)
+  s2_markers <- read.csv("data/S2_KO_vs_WT_markers.csv", header = TRUE)
   
   ## Fishers:
   # making a wide format df:
@@ -182,14 +182,12 @@
          x= "Stages",
          y="Regulons")
      
-  
-  
 ##-----------------------------------------------------------------------------
-## WT marker peaks
+##           WT marker peaks
 ##----------------------------------------------------------------------------
 ## SC stage:
 ## loading the regulons
-  sc_reg <- read.table("D0_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  sc_reg <- read.table("data/D0_eRegulon_direct.tsv", sep = "\t", header = TRUE)
   
 ## selcting the top 20k regulon triplets and cleaning the df
   reg_num <- 20000
@@ -203,7 +201,7 @@
            end= as.numeric(end))
   
 ## loading the markers:
-  sc_markers <- read.csv("../catlas_enrichment/SC_KO_vs_WT_markers.csv", header = TRUE)
+  sc_markers <- read.csv("data/SC_KO_vs_WT_markers.csv", header = TRUE)
   
 ## Fishers:
 # making a wide format df:
@@ -236,7 +234,7 @@
 ## DE stage
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  de_reg <- read.table("DE_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  de_reg <- read.table("data/DE_eRegulon_direct.tsv", sep = "\t", header = TRUE)
   
 ## selcting the top 20k regulon triplets and removing regulons with negative TF-GENE rho value
   reg_num <- 20000
@@ -250,7 +248,7 @@
            end= as.numeric(end)) 
   
 ## loading the markers:
-  de_markers <- read.csv("../catlas_enrichment/DE_KO_vs_WT_markers.csv", header = TRUE)
+  de_markers <- read.csv("data/DE_KO_vs_WT_markers.csv", header = TRUE)
   
 ## Fishers:
   # making a wide format df:
@@ -281,7 +279,7 @@
 ## S2 stage
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  s2_reg <- read.table("S2_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  s2_reg <- read.table("data/S2_eRegulon_direct.tsv", sep = "\t", header = TRUE)
   
 ## selcting the top 20k regulon triplets and cleaning the df
   reg_num <- 20000
@@ -295,7 +293,7 @@
            end= as.numeric(end)) 
   
 ## loading the markers:
-  s2_markers <- read.csv("../catlas_enrichment/S2_KO_vs_WT_markers.csv", header = TRUE)
+  s2_markers <- read.csv("data/S2_KO_vs_WT_markers.csv", header = TRUE)
   
 ## Fishers:
   # making a wide format df:

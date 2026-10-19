@@ -21,10 +21,10 @@
 ## SC stage:
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  sc_reg <- read.table("D0_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  sc_reg <- read.table("data/D0_eRegulon_direct.tsv", sep = "\t", header = TRUE)
 
 ## loading the Bulk DEGs table:
-  degs <- read.delim("../hg38_data/bulk_rna_degs.tsv", sep = "\t", header = TRUE)
+  degs <- read.delim("data/bulk_rna_degs.tsv", sep = "\t", header = TRUE)
   
 ## filtering the DEGs per stage:
   degs_list <- list()
@@ -77,7 +77,7 @@
 ## DE stage:
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  de_reg <- read.table("DE_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  de_reg <- read.table("data/DE_eRegulon_direct.tsv", sep = "\t", header = TRUE)
    
 ## wide format:
    de_wide_df <- gene_enrich_wide_df(data_df = deg_DE,
@@ -108,7 +108,7 @@
 ## DE stage:
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  s2_reg <- read.table("S2_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  s2_reg <- read.table("data/S2_eRegulon_direct.tsv", sep = "\t", header = TRUE)
    
 ## wide format:
   s2_wide_df <- gene_enrich_wide_df(data_df = deg_S2,
@@ -195,7 +195,7 @@
 ## DE stage:
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  de_reg <- read.table("DE_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  de_reg <- read.table("data/DE_eRegulon_direct.tsv", sep = "\t", header = TRUE)
   
   ## wide format:
   de_wide_df_wt <- gene_enrich_wide_df(data_df = deg_DE,
@@ -226,7 +226,7 @@
 ## S2 stage:
 ##-------------------------------------------------------------------------------------------------
 ## loading the regulons
-  s2_reg <- read.table("S2_eRegulon_direct.tsv", sep = "\t", header = TRUE)
+  s2_reg <- read.table("data/S2_eRegulon_direct.tsv", sep = "\t", header = TRUE)
   
   ## wide format:
   s2_wide_df_wt <- gene_enrich_wide_df(data_df = deg_S2,
