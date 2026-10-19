@@ -288,6 +288,7 @@
 ##-------------------------------------------------------------------------------------------------
 ## Combining KO and WT
 ##-------------------------------------------------------------------------------------------------
+## laoding the fishers results
   all_fishers_wt$stage <- paste0(all_fishers_wt$stage, "_WT")
   all_fishers$stage <- paste0(all_fishers$stage, "_KO")
   
