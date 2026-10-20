@@ -49,6 +49,7 @@
   list2env(degs_list, envir = .GlobalEnv)
   
 ## SC stage:
+  # category set to "Up" to select DEGs up in the KO w.r.t WT
   sc_wide_df <- gene_enrich_wide_df(data_df = deg_D0,
                                     enrich_df = sc_reg,
                                     col_name = "eRegulon_name",
@@ -170,6 +171,7 @@
 ## WT gained genes
 ##------------------------------------------------------------------------------
 ## SC stage:
+  # category set to "Down" to select DEGs more active in the WT w.r.t KO
   sc_wide_df_wt <- gene_enrich_wide_df(data_df = deg_D0,
                                     enrich_df = sc_reg,
                                     col_name = "eRegulon_name",

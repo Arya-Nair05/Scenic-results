@@ -41,6 +41,7 @@
   
 ## Fishers:
   # making a wide format df:
+  # category is set to Upregulated to select the peaks more accessible in the KO w.r.t WT
   sc_wide <- enrichment_wide_df(data_df = sc_markers,
                                 enrich_df = sc_reg_filt,
                                 col_name = "eRegulon_name",
@@ -207,7 +208,9 @@
   sc_markers <- read.csv("data/SC_KO_vs_WT_markers.csv", header = TRUE)
   
 ## Fishers:
-# making a wide format df:
+  # making a wide format df:
+  # category is set to Down to select the peaks more accessible in the WT w.r.t KO
+  
   sc_wide_wt <- enrichment_wide_df(data_df = sc_markers,
                                 enrich_df = sc_reg_filt,
                                 col_name = "eRegulon_name",
