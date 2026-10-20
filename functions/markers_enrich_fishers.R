@@ -23,17 +23,32 @@
 
 ## function:
 
-  enrichment_fishers <- function(wide_df= df_1){
+  enrichment_fishers <- function(wide_df= df_1,
+                                 category=NULL){
     
 ## looping through each variable name 
-  var_names <- setdiff(colnames(wide_df), c("peak", "marker_peak", "NA"))
+  if (tolower(category) =="peak"){
+    
+    var_names <- setdiff(colnames(wide_df), c("peak", "marker_peak", "NA"))
+    col_name <- "marker_peak"
+    
+  } else if (tolower(category) == "gene"){
+    
+    var_names <- setdiff(colnames(wide_df), c("Gene", "marker_gene", "NA"))
+    col_name <- "marker_gene"
+    
+  } else {
+    
+    stop("Provide Category: Should be either 'Gene' or 'Peak'")
+  
+  }
 
 # performing 
   loop_results <- list()
   
   for (x in var_names) {
     loop_results[[x]] <- pairwise_fishers(df_data = wide_df,
-                                              col_1 = "marker_peak",
+                                              col_1 = col_name,
                                               col_2 = x,
                                               col_name = x)
     

@@ -14,7 +14,7 @@
   set.seed(1234)
   
   source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/marker_gene_enrich_wide_df.R")
-  source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/marker_gene_enrich_fishers.R")
+  source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/markers_enrich_fishers.R")
   source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/pairwise_fishers.R")
   
 ##-------------------------------------------------------------------------------------------------
@@ -56,7 +56,8 @@
                                     category = "Up")
 
 ## Fishers
-  sc_gene_fisher <- enrichment_gene_fishers(wide_df = sc_wide_df)
+  sc_gene_fisher <- enrichment_fishers(wide_df = sc_wide_df, 
+                                       category = "Gene")
   sc_gene_fisher$stage <- "SC"
   
 ## Plotting:
@@ -87,7 +88,8 @@
                                      category = "Up")
    
    ## Fishers
-   de_gene_fisher <- enrichment_gene_fishers(wide_df = de_wide_df)
+   de_gene_fisher <- enrichment_fishers(wide_df = de_wide_df,
+                                        category = "Gene")
    de_gene_fisher$stage <- "DE"
    
    ## Plotting:
@@ -118,7 +120,8 @@
                                     category = "Up")
    
 ## Fishers
-  s2_gene_fisher <- enrichment_gene_fishers(wide_df = s2_wide_df)
+  s2_gene_fisher <- enrichment_fishers(wide_df = s2_wide_df,
+                                       category = "Gene")
   s2_gene_fisher$stage <- "S2"
    
 ## Plotting:
