@@ -24,7 +24,7 @@
 #      5. max_triplet_rank: The max number of regulons to be selecetd based on the triplet 
   
 ## function to perform multiple enrichments:
-  gene_enrich_wide_df <- function(data_df = df_1,
+gene_enrich_wide_df <- function(data_df = df_1,
                                  enrich_df= df_2,
                                  col_name= NULL,
                                  max_triplet_rank= 20000,

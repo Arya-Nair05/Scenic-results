@@ -12,7 +12,7 @@
   library(tidyverse)
   library(tibble)
 
-  pairwise_fishers <- function(df_data, 
+pairwise_fishers <- function(df_data, 
                                col_1= 1,
                                col_2= 2,
                                col_name = "name"){
@@ -45,4 +45,4 @@
       
     
     
-   }    
+}    

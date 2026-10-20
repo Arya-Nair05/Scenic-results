@@ -14,7 +14,7 @@
 
 ## defining the function
 
-  bed_overlaps <- function(bed.1= bed_1,
+bed_overlaps <- function(bed.1= bed_1,
                            bed.2=bed_2,
                            names= NULL,
                            overlap_type= "any"){
@@ -51,6 +51,6 @@
     
     return(df)
     
-  }
+}
   
   

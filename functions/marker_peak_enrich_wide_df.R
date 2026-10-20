@@ -25,7 +25,7 @@
 #      6. category: Specify if we need enrichments for upregulated markers/downregulated markers
   
 ## function to perform multiple enrichments:
-  enrichment_wide_df <- function(data_df = df_1,
+enrichment_wide_df <- function(data_df = df_1,
                                enrich_df= df_2,
                                col_name= NULL,
                                padj_thresh = 1e-5,
