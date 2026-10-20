@@ -16,7 +16,7 @@
   source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/bed_overlaps.R")
   source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/pairwise_fishers.R")
   source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/marker_peak_enrich_wide_df.R")
-  source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/marker_peak_enrich_fishers.R")
+  source("/Users/ana207/Desktop/R_Projects/Scenic-results/functions/markers_enrich_fishers.R")
   
   
 ##-------------------------------------------------------------------------------------------------
@@ -48,7 +48,8 @@
                                 avg_log2_thresh = 0.7,
                                 category = "Upregulated")
   
-  sc_fishers <- enrichment_fishers(wide_df = sc_wide)
+  sc_fishers <- enrichment_fishers(wide_df = sc_wide, 
+                                   category = "Peak")
   sc_fishers$stage <- "SC"
   
 ## heatmap and dotplot:
@@ -95,7 +96,8 @@
                                 avg_log2_thresh = 0.7,
                                 category = "Upregulated")
   
-  de_fishers <- enrichment_fishers(wide_df = de_wide)
+  de_fishers <- enrichment_fishers(wide_df = de_wide,
+                                   category = "Peak")
   de_fishers$stage <- "DE"
   
   ## heatmap and dotplot:
@@ -140,7 +142,8 @@
                                 avg_log2_thresh = 0.7,
                                 category = "Upregulated")
   
-  s2_fishers <- enrichment_fishers(wide_df = s2_wide)
+  s2_fishers <- enrichment_fishers(wide_df = s2_wide, 
+                                   category = "Peak")
   s2_fishers$stage <- "S2"
   
   ## heatmap and dotplot:
@@ -212,7 +215,8 @@
                                 avg_log2_thresh = 0.7,
                                 category = "Down")
   
-  sc_fishers_wt <- enrichment_fishers(wide_df = sc_wide_wt)
+  sc_fishers_wt <- enrichment_fishers(wide_df = sc_wide_wt, 
+                                      category = "Peak")
   sc_fishers_wt$stage <- "SC"
   
   ## heatmap and dotplot:
@@ -259,7 +263,8 @@
                                 avg_log2_thresh = 0.7,
                                 category = "Down")
   
-  de_fishers_wt <- enrichment_fishers(wide_df = de_wide_wt)
+  de_fishers_wt <- enrichment_fishers(wide_df = de_wide_wt,
+                                      category = "Peak")
   de_fishers_wt$stage <- "DE"
   
   ## heatmap and dotplot:
@@ -304,7 +309,8 @@
                                 avg_log2_thresh = 0.7,
                                 category = "Down")
   
-  s2_fishers_wt <- enrichment_fishers(wide_df = s2_wide_wt)
+  s2_fishers_wt <- enrichment_fishers(wide_df = s2_wide_wt, 
+                                      category = "Peak")
   s2_fishers_wt$stage <- "S2"
   
   ## heatmap and dotplot:
