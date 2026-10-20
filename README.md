@@ -9,5 +9,7 @@ This repo has the data and scripts needed for performing marker gene and marker 
 -   `data`: The direct eRegulons predicted by SCENIC+ for each of the three stages\
     Differentially accessible marker peaks between KO vs WT from scATAC-seq data per stage\
     Differntially expressed genes from bulk RNA-seq per stage
+
 -   `functions:` All functions needed to run the scripts
+
 -   `scripts`: Scripts for gene enrichment and peak enrichment
