@@ -1,9 +1,10 @@
-#--------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 ## Function to find the overlap between 2  bed files and return the overlapping coords
 
-## Arguments:  tables: 2 bed files to be used
-#              names: a vector of column names
-#--------------------------------------------------------------------------------
+## Arguments:  bed_1, bed_2: 2 BED files 
+#              names:        a vector of 2 column names corresponding to each of the BED
+#              overlap_type: type argument of findOverlapPairs function
+#--------------------------------------------------------------------------------------------
 
 
 ## laoding libraries
