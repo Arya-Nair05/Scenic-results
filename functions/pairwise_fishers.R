@@ -42,7 +42,5 @@ pairwise_fishers <- function(df_data,
         contingency_d = d)
       
       return(result_df)
-      
-    
     
 }    
